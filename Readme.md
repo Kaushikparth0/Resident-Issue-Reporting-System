@@ -48,17 +48,38 @@ Real communities face a common problem: residents have no structured way to repo
 
 ```
 resident-issue-reporting-system/
-├── client/                  # React frontend
-│   ├── src/
-│   │   ├── components/      # UI components
-│   │   ├── pages/           # Route-level pages (resident, admin)
-│   │   └── App.js
-├── server/                  # Express backend
-│   ├── routes/              # API route handlers
-│   ├── controllers/         # Business logic
-│   ├── models/              # DB schema/models
-│   └── index.js
-└── README.md
+├── .next/
+├── drizzle/
+│   ├── meta/
+│   │   ├── _journal.json
+│   │   └── 0000_snapshot.json
+│   └── 0000_cloudy_silvermane.sql
+├── node_modules/
+├── src/
+│   ├── app/
+│   │
+│   ├── components/
+│   │   └── IssueDetails.tsx
+│   │
+│   ├── db/
+│   │   ├── index.ts
+│   │   ├── schema.ts
+│   │   └── seed.ts
+│   │
+│   ├── lib/
+│   │   └── auth.ts
+│   │
+│   └── middleware.ts
+├── .env
+├── .gitignore
+├── drizzle.config.json
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+└── tsconfig.json
 ```
 
 ---
